@@ -48,7 +48,7 @@
   </footer>
   <script>
     document.querySelectorAll('.obf-email').forEach(function(a){
-      var e = a.dataset.u + '@' + a.dataset.d;
+      var e = atob(a.dataset.u) + '\x40' + atob(a.dataset.d);
       a.href = 'mailto:' + e;
       a.textContent = e;
     });
