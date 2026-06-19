@@ -14,7 +14,7 @@ baseurl: "/viveweb"   # project page: archietownsend.github.io/viveweb
 company:
   legal_entity: "Archie Townsend"
   jurisdiction: "the United Kingdom"
-policy_updated: "2026-06-19"
+policy_updated: "19/06/2026"
 
 # App Store link, fill in once live.
 app_store_url: "#"
