@@ -4,7 +4,7 @@
 
 Vive is an iOS app that turns a photo of any meal into an honest nutrition verdict, and your Apple Watch data into a daily longevity score.
 
-🌐 **[vive website](https://archietownsend.github.io/viveweb)**
+🌐 **[vive website](https://getvive.io)**
 
 ---
 
@@ -25,9 +25,9 @@ Available on the [App Store](#) *(link coming soon)*.
 
 Your health data stays on your device. No account required. Nothing sold.
 
-- [Privacy Policy](https://archietownsend.github.io/viveweb/privacy/)
-- [Terms of Use](https://archietownsend.github.io/viveweb/terms/)
+- [Privacy Policy](https://getvive.io/privacy/)
+- [Terms of Use](https://getvive.io/terms/)
 
 ## Contact
 
-For support or privacy enquiries, visit the [website](https://archietownsend.github.io/viveweb).
+For support or privacy enquiries, visit the [website](https://getvive.io).

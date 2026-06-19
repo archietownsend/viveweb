@@ -1,5 +1,5 @@
 # Jekyll configuration for the Vive marketing site (GitHub Pages).
-# Served at archietownsend.github.io/viveweb (Pages source: main / root).
+# Served at https://getvive.io (custom domain; Pages source: main / root).
 
 title: "Vive"
 tagline: "live longer · live better"
@@ -7,8 +7,8 @@ description: >-
   Vive turns a photo of your food into an honest verdict, and your Apple Watch
   data into a daily longevity score. Scan meals, understand your sleep, build your
   aerobic base, all on your device.
-url: "https://archietownsend.github.io"
-baseurl: "/viveweb"   # project page: archietownsend.github.io/viveweb
+url: "https://getvive.io"
+baseurl: ""   # custom apex domain serves from the root
 
 # Contact + legal details used across the policy pages.
 company:
