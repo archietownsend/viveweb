@@ -1,47 +1,33 @@
-# viveweb
+# Vive
 
-The public marketing site for **Vive**, plus the hosted **Privacy Policy** and
-**Terms of Use**. Built with [Jekyll](https://jekyllrb.com/) and served by
-GitHub Pages at <https://archietownsend.github.io/viveweb>.
+**live longer · live better**
 
-## Structure
+Vive is an iOS app that turns a photo of any meal into an honest nutrition verdict, and your Apple Watch data into a daily longevity score.
 
-```
-_config.yml              site config (contact, legal, URLs)
-index.html               marketing landing page
-privacy.md               → /privacy/
-terms.md                 → /terms/
-_layouts/                default (chrome) + page (legal prose)
-assets/css/style.css     dark sage theme matching the app
-assets/img/              icon + App Store screenshots (from the vive repo)
-```
+🌐 **[vive website](https://archietownsend.github.io/viveweb)**
 
-## Enable GitHub Pages
+---
 
-Repo **Settings → Pages → Build and deployment**:
+## Download
 
-- **Source:** Deploy from a branch
-- **Branch:** `main`, folder **`/` (root)**
+Available on the [App Store](#) *(link coming soon)*.
 
-GitHub builds the Jekyll site automatically and publishes to
-<https://archietownsend.github.io/viveweb>.
+## Features
 
-> If you move to a custom domain, update `url`/`baseurl` in `_config.yml`
-> (set `baseurl` to `""` for a root domain).
+- **Scan any meal** — point your camera at a plate, label, or menu and get a clear GOOD / MIXED / AVOID verdict with full macros, judged against your diet, goals, and allergies
+- **Daily coach** — personalised nudges that tick off the moment you act on them
+- **Longevity score** — one number from diet, sleep, exercise, and cardiovascular recovery
+- **Sleep tracking** — a complete per-night score with stage breakdown and plain coaching
+- **Zone 2** — track aerobic minutes from real workout heart-rate data
+- **Recipes** — a library of healthy meals filtered to your diet, logged in one tap
 
-## Local preview
+## Privacy
 
-```bash
-bundle install
-bundle exec jekyll serve   # http://localhost:4000/viveweb/
-```
+Your health data stays on your device. No account required. Nothing sold.
 
-## Editing
+- [Privacy Policy](https://archietownsend.github.io/viveweb/privacy/)
+- [Terms of Use](https://archietownsend.github.io/viveweb/terms/)
 
-- Contact, legal entity, jurisdiction, App Store link, and the policy date all
-  live in `_config.yml` and flow into the pages.
-- Screenshots come from the framed App Store set in the `vive` repo
-  (`appstore/framed/6.7`); re-copy into `assets/img/screens/` to refresh.
+## Contact
 
-> The policies are adapted templates, not legal advice — have a lawyer review
-> them before relying on them.
+For support or privacy enquiries, visit the [website](https://archietownsend.github.io/viveweb).
