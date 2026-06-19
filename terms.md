@@ -6,8 +6,6 @@ updated: true
 description: "The terms that govern your use of the Vive app."
 ---
 
-> This is a template, not legal advice — have a lawyer review it before you ship.
-
 ## 1. Acceptance
 
 By downloading or using Vive ("the App"), you agree to these Terms. If you do not

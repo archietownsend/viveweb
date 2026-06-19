@@ -6,8 +6,6 @@ updated: true
 description: "How Vive handles your data — local-first, no account, never sold."
 ---
 
-> This is a template, not legal advice — have a lawyer review it before you ship.
-
 ## Who we are
 
 Vive ("we", "us") is operated by {{ site.company.legal_entity }}, contactable at
