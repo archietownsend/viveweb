@@ -6,7 +6,7 @@ tagline: "live longer · live better"
 description: >-
   Vive turns a photo of your food into an honest verdict, and your Apple Watch
   data into a daily longevity score. Scan meals, understand your sleep, build your
-  aerobic base — all on your device.
+  aerobic base, all on your device.
 url: "https://archietownsend.github.io"
 baseurl: "/viveweb"   # project page: archietownsend.github.io/viveweb
 
@@ -16,7 +16,7 @@ company:
   jurisdiction: "the United Kingdom"
 policy_updated: "2026-06-19"
 
-# App Store link — fill in once live.
+# App Store link, fill in once live.
 app_store_url: "#"
 
 exclude:

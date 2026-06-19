@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 updated: true
-description: "How Vive handles your data — local-first, no account, never sold."
+description: "How Vive handles your data: local-first, no account, never sold."
 ---
 
 ## Who we are
@@ -18,7 +18,7 @@ Vive ("we", "us") is operated by {{ site.company.legal_entity }}, contactable at
 - Your Apple Health data is read **on your device** to calculate insights. It is
   not sold or shared. Only the **aggregate** figures used to write your optional
   weekly digest (e.g. average sleep hours, total Zone 2 minutes) are sent for AI
-  summarisation — never your individual Health records.
+  summarisation, never your individual Health records.
 - When you scan or compare a food, the photo or text you submit, plus a short
   summary of your profile, is sent to our processing service to generate a
   result. It is not used for advertising and not sold.
