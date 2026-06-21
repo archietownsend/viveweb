@@ -30,10 +30,11 @@ Ingredient detection by AI can be wrong or incomplete. You are responsible for
 verifying allergens yourself. Vive must never be your only safeguard against a
 food that could cause a serious reaction.
 
-## 4. Eligibility
+## 4. Eligibility and account
 
 You must be at least 13 to use the App and old enough to form a binding contract
-in your jurisdiction.
+in your jurisdiction. Vive uses Sign in with Apple to create your account; you are
+responsible for keeping access to your Apple ID secure.
 
 ## 5. Your responsibilities
 
@@ -43,10 +44,10 @@ text you submit and confirm you have the right to submit them.
 
 ## 6. Health data
 
-With your permission, the App reads Apple Health data and processes it on your
-device. Aggregate figures may be sent to our AI provider only to write your
-optional weekly digest, as described in the Privacy Policy. Your use of Apple
-Health is also governed by Apple's terms.
+With your permission, the App reads Apple Health data to calculate your scores and
+trends. The metrics needed for these features are stored in your account on our
+servers, as described in the Privacy Policy. We do not sell this data or use it
+for advertising. Your use of Apple Health is also governed by Apple's terms.
 
 ## 7. Third-party processing
 
@@ -73,8 +74,9 @@ accept the updated Terms. We will update the "Last updated" date.
 
 ## 11. Termination
 
-You may stop using the App at any time and delete it to remove on-device data. We
-may suspend or discontinue the App at any time.
+You may stop using the App at any time, and you can delete your account in the App
+to remove your data, as described in the Privacy Policy. We may suspend or
+discontinue the App at any time.
 
 ## 12. Governing law
 

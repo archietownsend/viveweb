@@ -23,7 +23,7 @@ Available on the [App Store](#) *(link coming soon)*.
 
 ## Privacy
 
-Your health data stays on your device. No account required. Nothing sold.
+Sign in with Apple keeps your account private. We don't sell your data or use it for advertising.
 
 - [Privacy Policy](https://getvive.io/privacy/)
 - [Terms of Use](https://getvive.io/terms/)

@@ -5,8 +5,8 @@ title: "Vive"
 tagline: "live longer · live better"
 description: >-
   Vive turns a photo of your food into an honest verdict, and your Apple Watch
-  data into a daily longevity score. Scan meals, understand your sleep, build your
-  aerobic base, all on your device.
+  data into a daily longevity score. Scan meals, understand your sleep, and build
+  your aerobic base — one honest score, every day.
 url: "https://getvive.io"
 baseurl: ""   # custom apex domain serves from the root
 
@@ -14,7 +14,7 @@ baseurl: ""   # custom apex domain serves from the root
 company:
   legal_entity: "Archie Townsend"
   jurisdiction: "the United Kingdom"
-policy_updated: "19/06/2026"
+policy_updated: "21/06/2026"
 
 # App Store link, fill in once live.
 app_store_url: "#"

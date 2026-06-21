@@ -343,23 +343,6 @@ em { font-style: italic; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .cap .kicker.indigo::before, .cap .kicker.clay::before, .cap .kicker.sage::before { opacity: 0.8; }
 
-/* ── Privacy band ────────────────────────────────────────── */
-.privacy { background: var(--char); border-top: 1px solid var(--line); }
-.privacy .privacy-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 60px; align-items: start; }
-.pills { display: grid; gap: 16px; }
-.priv {
-  background: var(--char-3); border: 1px solid var(--line);
-  border-radius: 16px; padding: 24px 26px;
-  display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start;
-  transition: border-color 0.2s ease;
-}
-.priv:hover { border-color: var(--line-2); }
-.priv .ic { width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center; background: var(--char-4); color: var(--sage); }
-.priv .ic svg { width: 20px; height: 20px; }
-.priv h3 { font-family: var(--sans); font-size: 17px; font-weight: 700; margin: 2px 0 4px; letter-spacing: -0.01em; }
-.priv p { margin: 0; color: var(--muted); font-size: 15.5px; }
-.band-note { margin: 28px 0 0; color: var(--faint); font-size: 15px; }
-
 /* ── Final CTA ───────────────────────────────────────────── */
 .final {
   text-align: center; padding: 128px 0;
@@ -407,7 +390,7 @@ em { font-style: italic; }
   .stage { order: -1; }
   .device { max-width: 264px; }
   .float-chip { left: 2%; bottom: 10%; }
-  .thesis-grid, .food-grid, .score-grid, .privacy .privacy-grid { grid-template-columns: 1fr; gap: 40px; }
+  .thesis-grid, .food-grid, .score-grid { grid-template-columns: 1fr; gap: 40px; }
   .gallery { grid-template-columns: 1fr; }
   .score-grid .stage { order: 0; }
   .nav-links { gap: 18px; }
