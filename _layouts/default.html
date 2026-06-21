@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#100d0a">
   {% seo %}
   <link rel="icon" type="image/png" href="{{ '/assets/img/icon.png' | relative_url }}">
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/fraunces-roman.woff2' | relative_url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/fraunces-italic.woff2' | relative_url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/hanken-grotesk.woff2' | relative_url }}" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="{{ '/' | relative_url }}">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Vive home">
         <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" class="brand-mark">
-        <span class="brand-word">vive<span class="dot">.</span></span>
+        <span class="wordmark">vive<span class="dot">.</span></span>
       </a>
-      <nav class="nav-links">
-        <a href="{{ '/#features' | relative_url }}">Features</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="{{ '/#food' | relative_url }}">Food</a>
+        <a href="{{ '/#score' | relative_url }}">Score</a>
         <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="{{ site.app_store_url }}">Get the app</a>
       </nav>
     </div>
   </header>
@@ -30,15 +35,24 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <div class="foot-brand">
-        <span class="brand-word">vive<span class="dot">.</span></span>
-        <span class="foot-tag">{{ site.tagline }}</span>
+      <div class="foot-top">
+        <div>
+          <div class="foot-brand">
+            <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" class="brand-mark">
+            <span class="wordmark">vive<span class="dot">.</span></span>
+          </div>
+          <p class="foot-tag">{{ site.tagline }}. Built privately, for a longer life.</p>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/#food' | relative_url }}">Food</a>
+          <a href="{{ '/#score' | relative_url }}">Score</a>
+          <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+          <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
+          {% include email.html %}
+        </nav>
       </div>
-      <nav class="foot-links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-        <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
-      </nav>
+      <div class="foot-rule"></div>
       <p class="foot-fine">
         Vive provides general nutrition and wellness information only. It is not a
         medical device and does not provide medical advice, diagnosis, or treatment.
@@ -46,12 +60,53 @@
       <p class="foot-fine">© {{ 'now' | date: "%Y" }} {{ site.company.legal_entity }}. All rights reserved.</p>
     </div>
   </footer>
+
   <script>
-    document.querySelectorAll('.obf-email').forEach(function(a){
-      var e = atob(a.dataset.u) + '\x40' + atob(a.dataset.d);
-      a.href = 'mailto:' + e;
-      a.textContent = e;
-    });
+    (function () {
+      // Obfuscated contact email — decoded only in the browser.
+      document.querySelectorAll('.obf-email').forEach(function (a) {
+        var e = atob(a.dataset.u) + '\x40' + atob(a.dataset.d);
+        a.href = 'mailto:' + e;
+        a.textContent = e;
+      });
+
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Count a number up to its target.
+      function countUp(el) {
+        var target = parseInt(el.dataset.count, 10);
+        var dur = 1100, start = null;
+        function frame(t) {
+          if (!start) start = t;
+          var p = Math.min((t - start) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(eased * target);
+          if (p < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+      }
+
+      if (reduce || !('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+        document.querySelectorAll('.scorecard').forEach(function (el) { el.classList.add('in'); });
+        document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.dataset.count; });
+        return;
+      }
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          if (e.target.classList.contains('scorecard')) {
+            var n = e.target.querySelector('[data-count]');
+            if (n) countUp(n);
+          }
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+
+      document.querySelectorAll('.reveal, .scorecard').forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>

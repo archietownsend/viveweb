@@ -2,151 +2,237 @@
 layout: default
 ---
 
+<!-- ── Hero ─────────────────────────────────────────────── -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Live longer · live better</p>
-      <h1>Know what's in <em>your</em> food, and what your body does with it.</h1>
-      <p class="lede">
-        Vive turns a photo of any meal into an honest verdict, and your Apple Watch
-        data into a daily longevity score. Scan food, understand your sleep, build
-        your aerobic base, all processed on your device.
+      <p class="kicker reveal">Live longer · live better</p>
+      <h1 class="reveal d1">Honest food.<br><em>A longer life.</em></h1>
+      <p class="lead reveal d2">
+        Point your camera at any meal and Vive returns a clear verdict — <b>good, mixed,
+        or avoid</b> — with the macros to back it up. Then it turns your Apple Watch data
+        into one daily longevity score. All of it on your device.
       </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="{{ site.app_store_url }}">Download on the App Store</a>
-        <a class="btn btn-ghost" href="#features">See how it works</a>
+      <div class="cta-row reveal d2">
+        <a class="btn btn-primary" href="{{ site.app_store_url }}"><svg class="glyph" viewBox="0 0 384 512" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M318.7 268c-.2-37 16.6-65 50.5-85.7-19-27.2-47.6-42.2-85.4-45-35.9-2.7-75 21-89.3 21-15 0-49.7-20-76.7-20C61.7 138.5 0 184.6 0 278.3c0 27.7 5.1 56.3 15.2 85.9 13.5 38.8 62.3 134 113.2 132.4 26.6-.6 45.4-18.9 80-18.9 33.6 0 51 18.9 80.6 18.9 51.3-.7 95.5-87.3 108.4-126.2-68.9-32.5-65.7-95.2-65.7-97.1zM256.6 86.8c30.7-36.4 27.9-69.5 27-81.5-27.1 1.6-58.5 18.5-76.4 39.2-19.8 22.4-31.4 50.1-28.9 80.4 29.3 2.3 56-12.8 78.3-38.1z"/></svg> Download on the App Store</a>
+        <a class="btn btn-ghost" href="#food">See how it reads a meal</a>
       </div>
-      <p class="hero-note">Private by design · No account required · On-device health data</p>
+      <p class="hero-note reveal d3">
+        <span>Private by design</span><span class="sep"></span>
+        <span>No account</span><span class="sep"></span>
+        <span>On-device health data</span>
+      </p>
     </div>
-    <div class="hero-shot">
-      <img src="{{ '/assets/img/screens/today.png' | relative_url }}" alt="Vive's Today screen showing the daily coach and longevity score">
+
+    <div class="stage reveal d2">
+      <img class="device" src="{{ '/assets/img/phone/scan-good.png' | relative_url }}"
+           alt="A meal scanned in Vive, returning a GOOD verdict with full macros" width="320">
+      <div class="float-chip" aria-hidden="true">
+        <span class="fc-num">82</span>
+        <span class="fc-meta">
+          <span class="fc-label">Longevity today</span>
+          <span class="fc-val">Strong · up 3</span>
+        </span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="features" id="features">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">What's inside</p>
-      <h2 class="section-title">Everything you need to eat and live better</h2>
+<!-- ── Thesis: the two questions Vive answers ───────────── -->
+<section class="thesis">
+  <div class="wrap thesis-grid">
+    <div class="ask a1 reveal">
+      <q>What's actually in this?</q>
+      <p>A full macro breakdown and an honest verdict on any plate, label, or menu —
+        judged against your diet, goals, conditions, and allergies. Not a calorie count. A call.</p>
     </div>
+    <div class="ask a2 reveal d1">
+      <q>What's it doing to me?</q>
+      <p>One longevity score, every day, from your sleep, meals, and movement — with the
+        single next thing that moves it most. Progress you can actually feel.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="feature-row">
-      <div class="feature-text">
-        <span class="feature-index">01</span>
-        <h3>Scan any meal, get an honest verdict</h3>
-        <p>
-          Point your camera at a plate, a label, or a menu. Vive analyses it and
-          returns a clear verdict with full macros, judged
-          against <em>your</em> diet, goals, conditions, and allergies.
-        </p>
-        <div class="verdicts">
-          <span class="verdict good">Good</span>
-          <span class="verdict mixed">Mixed</span>
-          <span class="verdict avoid">Avoid</span>
+<!-- ── Food intelligence ────────────────────────────────── -->
+<section class="section tint-food" id="food">
+  <div class="wrap food-grid">
+    <div class="food-copy reveal">
+      <p class="kicker clay">The verdict</p>
+      <h2 class="title">Every meal gets an <em>honest</em> read.</h2>
+      <p class="lead">
+        Vive doesn't just count calories. It weighs protein quality, processing, added sugar,
+        seed oils, and fibre against what matters for <em>you</em> — then says so plainly.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <span class="n">i.</span>
+          <div><h4>Point and shoot</h4><p>A plate, a packet, or a restaurant menu. One photo is enough.</p></div>
+        </div>
+        <div class="step">
+          <span class="n">ii.</span>
+          <div><h4>Vive reads it</h4><p>Ingredients, macros, and processing — recognised on your device.</p></div>
+        </div>
+        <div class="step">
+          <span class="n">iii.</span>
+          <div><h4>You get a verdict</h4><p>Good, mixed, or avoid — with the reasons that apply to your profile.</p></div>
         </div>
       </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/scan-good.png' | relative_url }}" alt="A scanned meal with a GOOD verdict and macros"></div>
-    </div>
 
-    <div class="feature-row reverse">
-      <div class="feature-text">
-        <span class="feature-index">02</span>
-        <h3>A personal daily coach</h3>
-        <p>
-          Every day Vive reads your latest health and meals and gives you one to
-          three focused nudges (hit your protein, reach 10k steps, get your Zone 2
-          minutes) and ticks them off the moment you do.
-        </p>
+      <div class="verdict-row">
+        <span class="verdict good">✓ Good</span>
+        <span class="verdict mixed">~ Mixed</span>
+        <span class="verdict avoid">! Avoid</span>
       </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/today.png' | relative_url }}" alt="The Today screen with the daily coach"></div>
     </div>
 
-    <div class="feature-row">
-      <div class="feature-text">
-        <span class="feature-index">03</span>
-        <h3>Your longevity score, every day</h3>
-        <p>
-          One number from four pillars (diet, sleep, exercise, and cardiovascular
-          recovery) built from your meal log and Apple Health. See exactly what's
-          moving it and what to do next.
-        </p>
+    <div class="food-shots reveal d1">
+      <div class="shot shot-a">
+        <img class="device" src="{{ '/assets/img/phone/scan-good.png' | relative_url }}"
+             alt="Chicken, quinoa and salad bowl scanned as GOOD — complete protein">
       </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/health.png' | relative_url }}" alt="The longevity score and breakdown"></div>
+      <div class="shot shot-b">
+        <img class="device" src="{{ '/assets/img/phone/scan-avoid.png' | relative_url }}"
+             alt="Cinnamon rolls scanned as AVOID — added sugar, ultra-processed">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Longevity score + native instrument ──────────────── -->
+<section class="section tint-score" id="score">
+  <div class="wrap score-grid">
+    <div class="scorecard reveal" role="img"
+         aria-label="Longevity score 82 of 100, Strong. Diet 23 of 30, Sleep 22 of 25, Exercise 17 of 25, Recovery 20 of 20.">
+      <div class="sc-top">
+        <span class="sc-label">Longevity score</span>
+        <span class="sc-state">Strong</span>
+      </div>
+      <div class="sc-num-row">
+        <span class="sc-num"><span data-count="82">0</span></span>
+        <span class="sc-outof">/ 100</span>
+      </div>
+      <div class="sc-pillars">
+        <div class="pillar diet" style="--w:77%">
+          <span class="p-name">Diet</span><span class="p-track"><span class="p-fill"></span></span><span class="p-val">23/30</span>
+        </div>
+        <div class="pillar sleep" style="--w:88%">
+          <span class="p-name">Sleep</span><span class="p-track"><span class="p-fill"></span></span><span class="p-val">22/25</span>
+        </div>
+        <div class="pillar exercise" style="--w:68%">
+          <span class="p-name">Exercise</span><span class="p-track"><span class="p-fill"></span></span><span class="p-val">17/25</span>
+        </div>
+        <div class="pillar recovery" style="--w:100%">
+          <span class="p-name">Recovery</span><span class="p-track"><span class="p-fill"></span></span><span class="p-val">20/20</span>
+        </div>
+      </div>
+      <p class="sc-foot">Scored on <b>vive.</b> · diet · sleep · exercise · cardiovascular recovery</p>
     </div>
 
-    <div class="feature-row reverse">
-      <div class="feature-text">
-        <span class="feature-index">04</span>
+    <div class="score-copy reveal d1">
+      <p class="kicker sage">Your daily number</p>
+      <h2 class="title">Four pillars, <em>one</em> honest score.</h2>
+      <p class="lead">
+        Built from your meal log and Apple Health, recalculated every day. See exactly
+        what's moving it — and the one thing to do next.
+      </p>
+      <ul class="feat-list">
+        <li><b>Diet</b> — protein, fibre, and food quality from everything you log.</li>
+        <li><b>Sleep</b> — duration, deep and REM, timing, and overnight recovery.</li>
+        <li><b>Exercise</b> — daily movement and weekly Zone 2 from real workouts.</li>
+        <li><b>Recovery</b> — resting heart rate and HRV trends, read as rest, not alarm.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── Also inside ──────────────────────────────────────── -->
+<section class="section tint-rest">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Also inside</p>
+      <h2 class="title">A coach that reads the day with you.</h2>
+    </div>
+
+    <div class="gallery">
+      <article class="cap warm reveal">
+        <p class="kicker clay"><span class="dot" style="background:var(--clay)"></span> Daily coach</p>
+        <h3>One to three things, today</h3>
+        <p>Vive reads your latest health and meals and gives you a short list of focused
+          nudges — hit your protein, reach 10k steps, get your Zone 2 — and ticks them off the moment you do.</p>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/today.png' | relative_url }}" alt="Vive's Today screen with the daily coach"></div>
+      </article>
+
+      <article class="cap indigo reveal d1">
+        <p class="kicker indigo"><span class="dot" style="background:var(--indigo)"></span> Sleep</p>
         <h3>Understand every night</h3>
-        <p>
-          A complete sleep score covering duration, deep and REM stages, bedtime,
-          efficiency, and overnight recovery, with age-aware targets and a plain,
-          encouraging read on how you slept.
-        </p>
-      </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/sleep.png' | relative_url }}" alt="The sleep score screen"></div>
-    </div>
+        <p>A complete score covering duration, deep and REM stages, bedtime, efficiency, and
+          recovery — with age-aware targets and a plain, encouraging read on how you slept.</p>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/sleep.png' | relative_url }}" alt="Vive's nightly sleep score"></div>
+      </article>
 
-    <div class="feature-row">
-      <div class="feature-text">
-        <span class="feature-index">05</span>
+      <article class="cap green reveal">
+        <p class="kicker sage"><span class="dot" style="background:var(--green)"></span> Zone 2</p>
         <h3>Build your aerobic base</h3>
-        <p>
-          Vive tracks your Zone 2 minutes from real workout heart-rate data using
-          Apple's own zones, so you can hit the weekly cardio that actually
-          supports a long, healthy life.
-        </p>
-      </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/zone2.png' | relative_url }}" alt="The Zone 2 detail screen"></div>
-    </div>
+        <p>Vive tracks your Zone 2 minutes from real workout heart-rate data using Apple's own
+          zones, so you can hit the weekly cardio that supports a long, healthy life.</p>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/zone2.png' | relative_url }}" alt="Vive's Zone 2 detail screen"></div>
+      </article>
 
-    <div class="feature-row reverse">
-      <div class="feature-text">
-        <span class="feature-index">06</span>
-        <h3>Recipes matched to your goals</h3>
-        <p>
-          A library of healthy, single-serving meals filtered to your diet and
-          allergies: high-protein, low-carb, quick, and more. Log any of them in
-          one tap, no scan required.
-        </p>
-      </div>
-      <div class="feature-shot"><img src="{{ '/assets/img/screens/recipes.png' | relative_url }}" alt="The recipes screen"></div>
+      <article class="cap sage reveal d1">
+        <p class="kicker sage"><span class="dot" style="background:var(--sage)"></span> Recipes</p>
+        <h3>Matched to your goals</h3>
+        <p>A library of healthy, single-serving meals filtered to your diet and allergies —
+          high-protein, low-carb, quick, and more. Log any of them in one tap, no scan required.</p>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/recipes.png' | relative_url }}" alt="Vive's recipe library"></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="privacy-band">
-  <div class="wrap">
-    <h2 class="section-title">Private by design</h2>
-    <div class="pillars">
-      <div class="pillar">
-        <h3>On your device</h3>
-        <p>Your profile, meals, weight, and Apple Health data stay on your phone, not on our servers.</p>
+<!-- ── Privacy ──────────────────────────────────────────── -->
+<section class="section privacy">
+  <div class="wrap privacy-grid">
+    <div class="reveal">
+      <p class="kicker sage">Private by design</p>
+      <h2 class="title">Your health data never <em>leaves</em> your phone.</h2>
+      <p class="band-note">
+        Read the full <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        and <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>.
+      </p>
+    </div>
+
+    <div class="pills reveal d1">
+      <div class="priv">
+        <span class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div><h3>On your device</h3><p>Your profile, meals, weight, and Apple Health data stay on your phone — not on our servers.</p></div>
       </div>
-      <div class="pillar">
-        <h3>No account</h3>
-        <p>No sign-up, no email, no ad identifiers. Delete the app and everything goes with it.</p>
+      <div class="priv">
+        <span class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-3.5 3.5-6 8-6s8 2.5 8 6"/></svg>
+        </span>
+        <div><h3>No account</h3><p>No sign-up, no email, no ad identifiers. Delete the app and everything goes with it.</p></div>
       </div>
-      <div class="pillar">
-        <h3>Never sold</h3>
-        <p>Health data is never sold, shared with data brokers, or used for advertising.</p>
+      <div class="priv">
+        <span class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"/><path d="M12 2a7 7 0 017 7c0 2-1 3.5-2 5"/><path d="M5 7a7 7 0 00.5 8c1.5 2 4 4 6.5 5 1.5-.6 2.8-1.4 3.9-2.4"/></svg>
+        </span>
+        <div><h3>Never sold</h3><p>Health data is never sold, shared with data brokers, or used for advertising. Not now, not ever.</p></div>
       </div>
     </div>
-    <p class="band-link">
-      Read the full <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a> and
-      <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>.
-    </p>
   </div>
 </section>
 
-<section class="final-cta">
+<!-- ── Final CTA ────────────────────────────────────────── -->
+<section class="final">
   <div class="wrap">
-    <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" class="cta-icon">
-    <h2>Start living better today.</h2>
-    <a class="btn btn-primary" href="{{ site.app_store_url }}">Download on the App Store</a>
-    <p class="disclaimer">
-      Vive provides general wellness information only and is not a medical device.
-    </p>
+    <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" class="cta-icon reveal">
+    <h2 class="reveal d1">Start eating with <em>a second look.</em></h2>
+    <p class="sub reveal d1">Free to try. No account. Your data stays yours.</p>
+    <a class="btn btn-primary reveal d2" href="{{ site.app_store_url }}"><svg class="glyph" viewBox="0 0 384 512" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M318.7 268c-.2-37 16.6-65 50.5-85.7-19-27.2-47.6-42.2-85.4-45-35.9-2.7-75 21-89.3 21-15 0-49.7-20-76.7-20C61.7 138.5 0 184.6 0 278.3c0 27.7 5.1 56.3 15.2 85.9 13.5 38.8 62.3 134 113.2 132.4 26.6-.6 45.4-18.9 80-18.9 33.6 0 51 18.9 80.6 18.9 51.3-.7 95.5-87.3 108.4-126.2-68.9-32.5-65.7-95.2-65.7-97.1zM256.6 86.8c30.7-36.4 27.9-69.5 27-81.5-27.1 1.6-58.5 18.5-76.4 39.2-19.8 22.4-31.4 50.1-28.9 80.4 29.3 2.3 56-12.8 78.3-38.1z"/></svg> Download on the App Store</a>
+    <p class="disclaimer reveal d2">Vive provides general wellness information only and is not a medical device.</p>
   </div>
 </section>
