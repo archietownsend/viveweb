@@ -21,6 +21,13 @@ Vive ("we", "us") is operated by {{ site.company.legal_entity }}, contactable at
 - When you scan or compare a food, the photo or text you submit, plus a short
   summary of your profile, is sent to our processing service to generate a result.
   It is not used for advertising and not sold.
+- Your individual, raw Apple Health records are processed on your device. Only
+  aggregate figures derived from them (for example average sleep, resting heart
+  rate, HRV, and Zone 2 minutes) are sent to our servers to generate your scores,
+  daily coach, and body-response insights.
+- If you subscribe to Vive Pro, payment is handled entirely by Apple; we use a
+  subscription processor (RevenueCat) to keep your subscription status up to date
+  and never see your card details.
 - We do not sell your data, share it with data brokers, or use it for advertising.
 
 ## Your account (Sign in with Apple)
@@ -49,13 +56,18 @@ active.
 ## Apple Health (HealthKit) data
 
 With your permission, Vive reads heart rate, resting heart rate, heart rate
-variability, sleep, and workout data from Apple Health to show wellness trends and
-estimate Zone 2 minutes.
+variability, sleep, and workout data from Apple Health to show wellness trends,
+estimate Zone 2 minutes, and measure your body's post-meal response.
 
-- The metrics needed to calculate and show your scores are stored in your account
-  as described above.
-- We **never** use HealthKit data for advertising or marketing, never sell it, and
-  never share it with data brokers.
+- Your individual, raw Health records are processed **on your device** and are
+  never transmitted to us or to third parties.
+- To calculate your scores and generate your daily coach and body-response
+  insights, **aggregate figures derived from this data** (for example your average
+  sleep, resting heart rate, HRV, and total Zone 2 minutes) are stored in your
+  account as described above and included in coaching requests. No raw Health
+  samples are ever sent.
+- We **never** use HealthKit data (raw or aggregate) for advertising or marketing,
+  never sell it, and never share it with data brokers.
 - We do not store HealthKit data in iCloud.
 - You can revoke access any time in iOS Settings → Privacy & Security → Health.
 
@@ -67,16 +79,29 @@ To analyse a food, label, menu, or comparison, the **image or text you provide**
 is sent to our backend, which forwards it to our AI analysis provider
 (**Anthropic**, via the Claude API) to produce a result returned to your device.
 A condensed summary of your profile (diet, conditions, allergies, goals, age) is
-included so the verdict can be personalised. We do not use this content to train
-models, and we do not sell it.
+included so the verdict can be personalised. These requests carry your account
+credential so they can be authenticated, but our AI provider does not receive
+your name, email, or Apple account identifier. We do not use this content to
+train models, and we do not sell it.
+
+## Subscriptions (Vive Pro)
+
+Vive Pro is an auto-renewing subscription purchased through Apple's in-app
+purchase system. Payment and billing details (card numbers, receipts) are handled
+entirely by Apple — we never see or store them. We use **RevenueCat**, a
+third-party subscription-management processor, to verify purchases and keep your
+subscription status (active/expired, renewal date, product) up to date. RevenueCat
+receives your account identifier and purchase events from Apple; see RevenueCat's
+own privacy policy for how they process that data on our behalf.
 
 ## Service providers
 
 We share data only with providers that help us run the service, under agreements
 that limit their use of it:
 
-- **Apple** — Sign in with Apple and Apple Health.
-- **Anthropic** — AI analysis of food scans and digests.
+- **Apple** — Sign in with Apple, Apple Health, and in-app purchases.
+- **Anthropic** — AI analysis of food scans and generation of coaching text.
+- **RevenueCat** — subscription verification and status.
 - Our cloud hosting and database provider, which stores your account data on our
   behalf.
 
@@ -87,8 +112,9 @@ third-party analytics or advertising SDKs or ad identifiers.
 
 ## Your choices
 
-- Delete your account and its data from within the app (Settings → Delete
-  account).
+- Delete your account and its data from within the app (Me → Delete my account).
+  Note that deleting your account does not cancel an active Apple subscription —
+  manage that in iOS Settings → Subscriptions.
 - Revoke Health, Camera, or Photo access in iOS Settings at any time.
 - Stop sharing with Sign in with Apple from your Apple ID settings.
 - Contact {% include email.html %} with any privacy request, including access or
