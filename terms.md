@@ -36,53 +36,64 @@ You must be at least 13 to use the App and old enough to form a binding contract
 in your jurisdiction. Vive uses Sign in with Apple to create your account; you are
 responsible for keeping access to your Apple ID secure.
 
-## 5. Your responsibilities
+## 5. Subscriptions and free trial
+
+Vive offers an optional **Vive Pro** subscription, billed as an auto-renewing
+in-app purchase through your Apple ID. New accounts include a short free trial;
+when it ends, continued scanning requires a subscription. Current pricing is
+shown in the App before purchase. Subscriptions renew automatically unless
+cancelled at least 24 hours before the end of the current period, and can be
+managed or cancelled at any time in iOS Settings → your name → Subscriptions.
+Deleting your account does not cancel an active subscription. Payments and
+refunds are handled by Apple under their terms.
+
+## 6. Your responsibilities
 
 You agree to use the App lawfully and not to misuse, reverse engineer, or attempt
 to disrupt it or the backend service. You are responsible for the food photos and
 text you submit and confirm you have the right to submit them.
 
-## 6. Health data
+## 7. Health data
 
 With your permission, the App reads Apple Health data to calculate your scores and
 trends. The metrics needed for these features are stored in your account on our
 servers, as described in the Privacy Policy. We do not sell this data or use it
 for advertising. Your use of Apple Health is also governed by Apple's terms.
 
-## 7. Third-party processing
+## 8. Third-party processing
 
 Food analysis and digest generation are performed with the help of **Anthropic**
 (the Claude API). Their processing of submitted content is subject to their terms.
 We do not attach your identity to those requests.
 
-## 8. No warranty
+## 9. No warranty
 
 The App is provided "as is" and "as available," without warranties of any kind,
 express or implied, including accuracy, fitness for a particular purpose, or
 non-infringement, to the maximum extent permitted by law.
 
-## 9. Limitation of liability
+## 10. Limitation of liability
 
 To the maximum extent permitted by law, {{ site.company.legal_entity }} is not
 liable for any indirect, incidental, special, or consequential damages, or for
 any health outcome, arising from your use of or reliance on the App.
 
-## 10. Changes
+## 11. Changes
 
 We may update the App and these Terms. Continued use after changes means you
 accept the updated Terms. We will update the "Last updated" date.
 
-## 11. Termination
+## 12. Termination
 
 You may stop using the App at any time, and you can delete your account in the App
 to remove your data, as described in the Privacy Policy. We may suspend or
 discontinue the App at any time.
 
-## 12. Governing law
+## 13. Governing law
 
 These Terms are governed by the laws of {{ site.company.jurisdiction }}, without
 regard to conflict-of-laws rules.
 
-## 13. Contact
+## 14. Contact
 
 {% include email.html %} · {{ site.company.legal_entity }}
