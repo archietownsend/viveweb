@@ -24,6 +24,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - tools          # screenshot generator — build-time only, not part of the site
 
 plugins:
   - jekyll-seo-tag

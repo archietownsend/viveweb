@@ -262,9 +262,11 @@ em { font-style: italic; }
 
 /* ── Food intelligence ───────────────────────────────────── */
 .food-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 64px; align-items: center; }
-.food-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
-.food-shots .device { max-width: 100%; border-radius: 26px; }
-.food-shots .shot-b { margin-top: 44px; }
+/* Paired phone shots — two screens, the second dropped to stagger them. Shared
+   by "the read" (good vs avoid) and "the response" (meal detail vs patterns). */
+.shot-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+.shot-pair .device { max-width: 100%; border-radius: 26px; }
+.shot-pair .shot-b { margin-top: 44px; }
 .shot { position: relative; }
 .shot .tag {
   position: absolute; top: 14px; left: 14px; z-index: 2;
@@ -305,24 +307,10 @@ em { font-style: italic; }
   background: rgba(169,194,160,0.06);
 }
 
-.responsecard {
-  background: linear-gradient(180deg, var(--char-3), #14120b);
-  border: 1px solid var(--line-2);
-  border-radius: 22px; padding: 28px 28px 24px;
-  box-shadow: 0 40px 90px -40px rgba(0,0,0,0.8);
+.shot-note {
+  margin: 26px 0 0; font-size: 13px; color: var(--faint); line-height: 1.55;
+  padding-top: 18px; border-top: 1px solid var(--line);
 }
-.rc-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.rc-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--faint); }
-.rc-title { font-size: 27px; letter-spacing: -0.02em; margin: 12px 0 4px; line-height: 1.1; }
-.rc-curve { width: 100%; height: auto; margin-top: 10px; font-family: var(--sans); }
-.rc-bottom {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
-  margin-top: 10px; padding-top: 16px; border-top: 1px solid var(--line);
-}
-.rc-verdict { font-size: 15px; color: var(--muted); }
-.rc-verdict b { color: var(--green); font-weight: 700; }
-.rc-delta { font-size: 13px; color: var(--faint); font-feature-settings: "tnum"; }
-.rc-foot { margin: 14px 0 0; font-size: 13px; color: var(--faint); line-height: 1.55; }
 
 /* ── Longevity score + instrument ────────────────────────── */
 .score-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; }
@@ -385,25 +373,6 @@ em { font-style: italic; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .cap .kicker.indigo::before, .cap .kicker.clay::before, .cap .kicker.sage::before { opacity: 0.8; }
 
-/* Native coach mockup — replaces a screenshot inside the coach card. */
-.cap.cap-fill { grid-template-rows: auto auto auto 1fr; }
-.cap.cap-fill .cap-mock { align-self: stretch; display: flex; }
-.mockcard {
-  flex: 1; display: flex; flex-direction: column; justify-content: center;
-  background: linear-gradient(180deg, var(--char-2), #14120c);
-  border: 1px solid var(--line); border-bottom: none;
-  border-radius: 16px 16px 0 0; padding: 28px 26px 30px;
-  box-shadow: 0 -2px 30px -12px rgba(0,0,0,0.6);
-}
-.mc-detail { margin: 10px 0 0; font-size: 14.5px; color: var(--muted); line-height: 1.5; }
-.mc-eyebrow { font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); }
-.mc-title { font-family: var(--display); font-size: 24px; letter-spacing: -0.015em; margin: 8px 0 0; color: var(--paper); line-height: 1.15; }
-.mc-list { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-.mc-list li { display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: var(--muted); }
-.mc-list li.done { color: var(--paper); }
-.mc-tick { font-size: 13px; color: var(--faint); width: 18px; text-align: center; }
-.mc-list li.done .mc-tick { color: var(--green); }
-
 /* ── Final CTA ───────────────────────────────────────────── */
 .final {
   text-align: center; padding: 128px 0;
@@ -459,7 +428,7 @@ em { font-style: italic; }
 @media (max-width: 560px) {
   .wrap { padding: 0 20px; }
   .nav-links a:not(.nav-cta) { display: none; }
-  .food-shots .shot-b { margin-top: 0; }
+  .shot-pair .shot-b { margin-top: 0; }
   .pillar { grid-template-columns: 78px 1fr auto; gap: 11px; }
   .cta-row .btn { flex: 1 1 auto; }
 }
