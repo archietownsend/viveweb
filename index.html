@@ -25,12 +25,12 @@ layout: default
     </div>
 
     <div class="stage reveal d2">
-      <img class="device" src="{{ '/assets/img/phone/scan-good.png' | relative_url }}"
-           alt="A meal scanned in Vive, returning a GOOD verdict with full macros" width="320">
+      <img class="device" src="{{ '/assets/img/phone/scan-good.webp' | relative_url }}"
+           alt="A rainbow buddha bowl scanned in Vive, returning a GOOD verdict with full macros" width="320">
       <div class="float-chip" aria-hidden="true">
-        <span class="fc-num">+3</span>
+        <span class="fc-num">84</span>
         <span class="fc-meta">
-          <span class="fc-label">The response · 9:12pm</span>
+          <span class="fc-label">The response · 2 hr later</span>
           <span class="fc-val">Calm · your body agrees</span>
         </span>
       </div>
@@ -89,14 +89,14 @@ layout: default
       </div>
     </div>
 
-    <div class="food-shots reveal d1">
+    <div class="shot-pair reveal d1">
       <div class="shot shot-a">
-        <img class="device" src="{{ '/assets/img/phone/scan-good.png' | relative_url }}"
-             alt="Chicken, quinoa and salad bowl scanned as GOOD — complete protein">
+        <img class="device" src="{{ '/assets/img/phone/scan-good.webp' | relative_url }}"
+             alt="A rainbow buddha bowl scanned as GOOD — high fibre, complete plant protein">
       </div>
       <div class="shot shot-b">
-        <img class="device" src="{{ '/assets/img/phone/scan-avoid.png' | relative_url }}"
-             alt="Cinnamon rolls scanned as AVOID — added sugar, ultra-processed">
+        <img class="device" src="{{ '/assets/img/phone/scan-avoid.webp' | relative_url }}"
+             alt="Chocolate chip cookies scanned as AVOID — added sugar, ultra-processed">
       </div>
     </div>
   </div>
@@ -130,26 +130,18 @@ layout: default
       </div>
     </div>
 
-    <div class="responsecard reveal d1" role="img"
-         aria-label="A logged salmon and greens bowl. The read: good. The response, measured from Apple Watch heart rate: calm, 4 beats per minute over baseline.">
-      <div class="rc-top">
-        <span class="rc-label">Tonight · 7:41pm</span>
-        <span class="verdict good">✓ Good</span>
+    <div class="response-shots reveal d1">
+      <div class="shot-pair">
+        <div class="shot shot-a">
+          <img class="device" src="{{ '/assets/img/phone/response.webp' | relative_url }}"
+               alt="A logged salmon and greens bowl in Vive. The read: good. The response, measured from Apple Watch heart rate: a calm, steady response, 7 bpm over a 58 bpm baseline, back to rest in 55 minutes.">
+        </div>
+        <div class="shot shot-b">
+          <img class="device" src="{{ '/assets/img/phone/patterns.webp' | relative_url }}"
+               alt="Vive's Patterns screen: a 74 average body score for the week, the foods this body loves and fights, and one meal the AI called good that the body scored 44.">
+        </div>
       </div>
-      <h3 class="rc-title">Salmon &amp; greens bowl</h3>
-      <svg class="rc-curve" viewBox="0 0 340 120" fill="none" aria-hidden="true">
-        <line x1="0" y1="86" x2="340" y2="86" stroke="rgba(239,231,215,0.22)" stroke-width="1" stroke-dasharray="3 5"/>
-        <path d="M0 86 C 30 85, 52 84, 74 78 S 118 52, 148 48 S 210 58, 244 70 S 310 84, 340 85"
-              stroke="#84cc7e" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="148" cy="48" r="4" fill="#84cc7e"/>
-        <text x="4" y="78" font-size="10.5" fill="rgba(239,231,215,0.5)" font-family="inherit">baseline · 58 bpm</text>
-        <text x="158" y="44" font-size="11" fill="#84cc7e" font-family="inherit">peak +4 bpm</text>
-      </svg>
-      <div class="rc-bottom">
-        <span class="rc-verdict">The response · <b>Calm</b></span>
-        <span class="rc-delta">+4 bpm vs baseline</span>
-      </div>
-      <p class="rc-foot">Measured from your Apple Watch heart rate — never estimated.
+      <p class="shot-note">Measured from your Apple Watch heart rate — never estimated.
         No watch data, no verdict. Vive won't make one up.</p>
     </div>
   </div>
@@ -211,23 +203,13 @@ layout: default
     </div>
 
     <div class="gallery">
-      <article class="cap sage cap-fill reveal">
+      <article class="cap sage reveal">
         <p class="kicker sage"><span class="dot" style="background:var(--sage)"></span> Daily coach</p>
         <h3>One focus, today</h3>
         <p>Vive reads your latest health and meals and hands you one clear focus with a
-          short list of nudges — and ticks them off the moment you act.</p>
-        <div class="cap-shot cap-mock">
-          <div class="mockcard" aria-hidden="true">
-            <span class="mc-eyebrow">Today's focus</span>
-            <p class="mc-title">Protein before noon.</p>
-            <p class="mc-detail">You're at 12g — a 30g breakfast keeps you on pace for 140g today.</p>
-            <ul class="mc-list">
-              <li class="done"><span class="mc-tick">✓</span> 30g protein breakfast</li>
-              <li><span class="mc-tick">○</span> 10k steps · at 6,240</li>
-              <li><span class="mc-tick">○</span> 20 min Zone 2</li>
-            </ul>
-          </div>
-        </div>
+          nudge to match — and ticks it off the moment you act.</p>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/today.webp' | relative_url }}"
+             alt="Vive's Today screen: recovery, sleep and resting heart rate, a coach focus reading &quot;Your HRV is up, a good day to push&quot;, and the day's meals graded by the body"></div>
       </article>
 
       <article class="cap indigo reveal d1">
@@ -235,7 +217,7 @@ layout: default
         <h3>Understand every night</h3>
         <p>A complete score covering duration, deep and REM stages, bedtime, efficiency, and
           recovery — with age-aware targets and a plain, encouraging read on how you slept.</p>
-        <div class="cap-shot"><img src="{{ '/assets/img/phone/sleep.png' | relative_url }}" alt="Vive's nightly sleep score"></div>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/sleep.webp' | relative_url }}" alt="Vive's sleep score: 86 out of 100 for last night, broken into duration, deep and REM, bedtime, time awake and recovery"></div>
       </article>
 
       <article class="cap green reveal">
@@ -243,7 +225,7 @@ layout: default
         <h3>Build your aerobic base</h3>
         <p>Vive tracks your Zone 2 minutes from real workout heart-rate data using Apple's own
           zones, so you can hit the weekly cardio that supports a long, healthy life.</p>
-        <div class="cap-shot"><img src="{{ '/assets/img/phone/zone2.png' | relative_url }}" alt="Vive's Zone 2 detail screen"></div>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/zone2.webp' | relative_url }}" alt="Vive's Zone 2 screen: 94 of a target 150 weekly minutes, with minutes per day from real workouts"></div>
       </article>
 
       <article class="cap warm reveal d1">
@@ -251,7 +233,7 @@ layout: default
         <h3>Matched to your goals</h3>
         <p>A library of healthy, single-serving meals filtered to your diet and allergies —
           high-protein, low-carb, quick, and more. Log any of them in one tap, no scan required.</p>
-        <div class="cap-shot"><img src="{{ '/assets/img/phone/recipes.png' | relative_url }}" alt="Vive's recipe library"></div>
+        <div class="cap-shot"><img src="{{ '/assets/img/phone/recipes.webp' | relative_url }}" alt="Vive's recipe library, filtered to your diet and goals, with one-tap logging"></div>
       </article>
     </div>
   </div>

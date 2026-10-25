@@ -1,0 +1,20 @@
+{
+  "_comment": "Food photography used inside the rendered app screenshots. Unsplash IDs only — the generator fetches them into cache/ at build time and they are never committed. Unsplash License: free for commercial use, no attribution required. Each entry was picked by eye to match the meal it is labelled as; if you swap an ID, look at the photo first and update the meal name to match.",
+  "photos": {
+    "buddha-bowl": {
+      "id": "photo-1512621776951-a57141f2eefd",
+      "shows": "Top-down grain bowl — avocado, chickpeas, roast sweet potato, watermelon radish, tomato, mango",
+      "usedAs": "Rainbow buddha bowl (GOOD scan)"
+    },
+    "salmon": {
+      "id": "photo-1467003909585-2f8a72700288",
+      "shows": "Pan-seared salmon fillet over wilted greens with cucumber salsa, dark restaurant setting",
+      "usedAs": "Salmon & greens bowl (meal detail / response)"
+    },
+    "cookies": {
+      "id": "photo-1558961363-fa8fdf82db35",
+      "shows": "Chocolate chip cookies in a bowl on dark cloth",
+      "usedAs": "Chocolate chip cookies (AVOID scan)"
+    }
+  }
+}
